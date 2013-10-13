@@ -3113,6 +3113,25 @@
     </layout>
     <layout>
       <configItem>
+        <name>de_byxorna</name>
+        <shortDescription>de</shortDescription>
+        <description>German</description>
+        <languageList>
+          <iso639Id>ger</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>byxorna</name>
+            <description>German (byxorna)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+
+    <layout>
+      <configItem>
         <name>de</name>
         
         <shortDescription>de</shortDescription>
@@ -3138,12 +3157,6 @@
           <configItem>
             <name>nodeadkeys</name>
             <description>German (eliminate dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>byxorna</name>
-            <description>German (byxorna)</description>
           </configItem>
         </variant>
         <variant>

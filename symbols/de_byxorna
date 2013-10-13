@@ -11,8 +11,8 @@ xkb_symbols "byxorna" {
     name[Group1] = "German (byxorna)";
 
     // [ no modifier, shift, altgr, shift+altgr ]
-    key <BKSL>  { [ numbersign,   apostrophe, U007C,  grave ] };      // altgr+\ makes a pipe
-    key <TLDE>  { [ asciicircum,  grave,      degree, notsign ]  };   // ~ key makes carat, backtick, degree
+    key <BKSL>  { [ numbersign,   apostrophe, U007C,  grave ] };      // altgr+backslash makes a pipe
+    key <TLDE>  { [ asciicircum,  grave,      degree, notsign ]  };   // tilde key makes carat, backtick, degree
     key <AB09>  { [ period,       colon,      U003E,  division ] };   // altgr+. makes >
     key <AB10>  { [ minus,        underscore, U003C,  emdash  ] };    // altgr+, makes <
     

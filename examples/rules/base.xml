@@ -3114,7 +3114,24 @@
     <layout>
       <configItem>
         <name>de</name>
-        
+        <shortDescription>de</shortDescription>
+        <description>German</description>
+        <languageList>
+          <iso639Id>ger</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>byxorna</name>
+            <description>German (byxorna)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>de</name>
         <shortDescription>de</shortDescription>
         <description>German</description>
         <languageList>
@@ -3132,12 +3149,6 @@
           <configItem>
             <name>deadgraveacute</name>
             <description>German (dead grave acute)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>byxorna</name>
-            <description>German (byxorna)</description>
           </configItem>
         </variant>
         <variant>

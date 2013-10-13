@@ -452,7 +452,7 @@
   deadacute       de: German (dead acute)
   deadgraveacute  de: German (dead grave acute)
   nodeadkeys      de: German (eliminate dead keys)
-  byxorna         de: German (byxorna)
+  byxorna         de_byxorna: German (byxorna)
   T3              de: German (T3)
   ro              de: Romanian (Germany)
   ro_nodeadkeys   de: Romanian (Germany, eliminate dead keys)
