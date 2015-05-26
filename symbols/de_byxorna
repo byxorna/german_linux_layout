@@ -12,11 +12,10 @@ xkb_symbols "byxorna" {
 
     // [ no modifier, shift, altgr, shift+altgr ]
     key <BKSL>  { [ numbersign,   apostrophe, U007C,  grave ] };      // altgr+backslash makes a pipe
-    key <TLDE>  { [ asciicircum,  grave,      degree, notsign ]  };   // tilde key makes carat, backtick, degree
+    key <TLDE>  { [ asciicircum,  grave,      grave,  notsign ]  };   // tilde key makes carat, backtick
     key <AB08>  { [ comma,        semicolon,  U003C,  multiply ] };   // altgr+, makes <
     key <AB09>  { [ period,       colon,      U003E,  division ] };   // altgr+. makes >
-    
-    
+
 };
 
 
