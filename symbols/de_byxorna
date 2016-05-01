@@ -1,7 +1,7 @@
 // based on a keyboard map from an 'xkb/symbols/de' file
 // vim: set ts=2:sw=2
 
-partial alphanumeric_keys 
+partial alphanumeric_keys
 xkb_symbols "byxorna" {
  
     // we want to start with nodeadkeys as our base

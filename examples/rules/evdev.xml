@@ -4,6 +4,13 @@
   <modelList>
     <model>
       <configItem>
+        <name>chromebook</name>
+        <description>Chromebook</description>
+        <vendor>Google</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>pc101</name>
         <description>Generic 101-key PC</description>
         <vendor>Generic</vendor>
