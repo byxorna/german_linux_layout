@@ -8,6 +8,11 @@ About
 
 This defines a new variant of German called 'German (byxorna)'. It is based off of the de(nodeadkeys) layout. It fixes some issues with the nodeadkeys layout on ANSI geometry boards, like the lack of a pipe ```|``` symbol, or readily accessible comparators (```<```,```>```).
 
+### Sources
+
+* Keycodes for physical keys: http://www.charvolant.org/~doug/xkb/html/node5.html#SECTION00052000000000000000
+* UTF-8 character codes: http://www.utf8-chartable.de/
+
 Layouts
 =======
 
