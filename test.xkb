@@ -1,0 +1,6 @@
+xkb_keymap {
+    xkb_keycodes  { include "evdev+aliases(qwertz)" };
+    xkb_types     { include "complete" };
+    xkb_compat    { include "chromebook" };
+    xkb_symbols   { include "pc+de_byxorna(byxorna)+inet(evdev)+chromebook(overlay)" };
+};

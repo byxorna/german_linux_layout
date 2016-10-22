@@ -52,3 +52,17 @@ Install symbols/de_byxorna to /usr/share/X11/xkb/symbols/
       </variantList>
     </layout>
 
+
+### Test layout
+
+```
+$ xkbcomp -I. test.xkb
+$ xkbcomp -I. test.xkb $DISPLAY
+
+```
+
+### Dump Layout
+
+```
+$ xkbcomp -xkb $DISPLAY xkbmap
+```
