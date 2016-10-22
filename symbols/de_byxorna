@@ -15,6 +15,10 @@ xkb_symbols "byxorna" {
     key <TLDE>  { [ asciicircum,  grave,      grave,  notsign ]  };   // tilde key makes carat, backtick
     key <AB08>  { [ comma,        semicolon,  U003C,  multiply ] };   // altgr+, makes <
     key <AB09>  { [ period,       colon,      U003E,  division ] };   // altgr+. makes >
+    // alternate backtick, carat on += key to support 66 key layouts without gymnastics
+    key <AE12>  { [     grave,      asciicircum ] };
+
+
 
 };
 
