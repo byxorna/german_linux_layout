@@ -1,6 +1,8 @@
 // This mapping assumes that inet(evdev) will also be sourced
 partial
 xkb_symbols "overlay" {
+    include "inet(evdev)"
+    // see https://github.com/dnschneid/crouton/blob/master/targets/keyboard
     //key <LWIN> { [ Overlay1_Enable ], overlay1=<LWIN> };
     //key <LALT> { [ Overlay1_Enable ], overlay1=<LALT> };
     key <RCTL> { [ Overlay1_Enable ], overlay1=<RCTL> };
