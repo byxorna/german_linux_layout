@@ -3,54 +3,58 @@ partial
 xkb_symbols "overlay" {
     include "inet(evdev)"
     // see https://github.com/dnschneid/crouton/blob/master/targets/keyboard
-    // key <LWIN> { [ Overlay1_Enable ], overlay1=<LWIN> };
-    // key <LALT> { [ Overlay1_Enable ], overlay1=<LALT> };
-    //key <RCTL> { [ Overlay1_Enable ], overlay1=<RCTL> };
-    key <RCTL> { [ Overlay1_Enable ] };
+    // 2016-11-07 so, libxkbcommon 0.6.1-1 removed overlays!
+    // key <LWIN> { [ Overlay1_Enable ], Overlay1=<LWIN> };
+    // key <LALT> { [ Overlay1_Enable ], Overlay1=<LALT> };
+    // key <RCTL> { [ Overlay1_Enable ], Overlay1=<RCTL> };
+    // something forces ralt to iso_level3_shift, so override that
+    //key <RALT> { [ Alt_R ] };
+    //key <RCTL> { [ Overlay1_Enable ], Overlay1=<RCTL> };
+    //key <LWIN> { [ Overlay1_Enable ], overlay1=<LWIN> };
 
-    //key <AB09> { overlay1=<INS> };
+    //key <AB09> { Overlay1=<INS> };
 
-    key <LEFT> { overlay1=<HOME> };
-    key <RGHT> { overlay1=<END> };
-    key <UP>   { overlay1=<PGUP> };
-    key <DOWN> { overlay1=<PGDN> };
+    key <LEFT> { Overlay1=<HOME> };
+    key <RGHT> { Overlay1=<END> };
+    key <UP>   { Overlay1=<PGUP> };
+    key <DOWN> { Overlay1=<PGDN> };
 
-    key <FK01> { overlay1=<I247> };
+    key <FK01> { Overlay1=<I247> };
     key <I247> { [ XF86Back ] };
-    key <FK02> { overlay1=<I248> };
+    key <FK02> { Overlay1=<I248> };
     key <I248> { [ XF86Forward ] };
-    key <FK03> { overlay1=<I249> };
+    key <FK03> { Overlay1=<I249> };
     key <I249> { [ XF86Reload ] };
-    //key <FK04> { overlay1=<I235> }; // XF86Display
-    //key <FK05> { overlay1=<I250> };
+    //key <FK04> { Overlay1=<I235> }; // XF86Display
+    //key <FK05> { Overlay1=<I250> };
     //key <I250> { [ XF86ApplicationRight ] };
-    key <FK06> { overlay1=<I232> }; // XF86MonBrightnessDown
-    key <FK07> { overlay1=<I233> }; // XF86MonBrightnessUp
-    key <FK08> { overlay1=<MUTE> };
-    key <FK09> { overlay1=<VOL-> };
-    key <FK10> { overlay1=<VOL+> };
+    key <FK06> { Overlay1=<I232> }; // XF86MonBrightnessDown
+    key <FK07> { Overlay1=<I233> }; // XF86MonBrightnessUp
+    key <FK08> { Overlay1=<MUTE> };
+    key <FK09> { Overlay1=<VOL-> };
+    key <FK10> { Overlay1=<VOL+> };
 
-    key <AE01> { overlay1=<FK01> };
-    key <AE02> { overlay1=<FK02> };
-    key <AE03> { overlay1=<FK03> };
-    key <AE04> { overlay1=<FK04> };
-    key <AE05> { overlay1=<FK05> };
-    key <AE06> { overlay1=<FK06> };
-    key <AE07> { overlay1=<FK07> };
-    key <AE08> { overlay1=<FK08> };
-    key <AE09> { overlay1=<FK09> };
-    key <AE10> { overlay1=<FK10> };
-    key <AE11> { overlay1=<FK11> };
-    key <AE12> { overlay1=<FK12> };
-    key <BKSP> { overlay1=<DELE> };
+    key <AE01> { Overlay1=<FK01> };
+    key <AE02> { Overlay1=<FK02> };
+    key <AE03> { Overlay1=<FK03> };
+    key <AE04> { Overlay1=<FK04> };
+    key <AE05> { Overlay1=<FK05> };
+    key <AE06> { Overlay1=<FK06> };
+    key <AE07> { Overlay1=<FK07> };
+    key <AE08> { Overlay1=<FK08> };
+    key <AE09> { Overlay1=<FK09> };
+    key <AE10> { Overlay1=<FK10> };
+    key <AE11> { Overlay1=<FK11> };
+    key <AE12> { Overlay1=<FK12> };
+    key <BKSP> { Overlay1=<DELE> };
 
-    //key <LALT> { overlay1=<CAPS> };
-    //key <RALT> { overlay1=<CAPS> };
+    //key <LALT> { Overlay1=<CAPS> };
+    //key <RALT> { Overlay1=<CAPS> };
 
     // For some strange reason, some Super_R events are triggered when
     // the Search key is released (i.e. with overlay on).
     // This maps RWIN to a dummy key (<I253>), to make sure we catch it.
-    key <RWIN> { [ NoSymbol ], overlay1=<I253> };
+    key <RWIN> { [ NoSymbol ], Overlay1=<I253> };
 
     // Map dummy key to no symbol
     key <I253> { [ NoSymbol ] };
