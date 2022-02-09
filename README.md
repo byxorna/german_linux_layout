@@ -25,13 +25,13 @@ Install
 
 Install symbols/de_byxorna to /usr/share/X11/xkb/symbols/
 
-###/usr/share/X11/xkb/rules/{evdev,base}.lst
+### /usr/share/X11/xkb/rules/{evdev,base}.lst
 
     ! variant
     ...
       byxorna         de_byxorna: German (byxorna)
 
-###/usr/share/X11/xkb/rules/{evdev,base}.xml
+### /usr/share/X11/xkb/rules/{evdev,base}.xml
 
     <layout>
       <configItem>

@@ -12,5 +12,6 @@ cp $root/symbols/de_byxorna $install_path/symbols/
 echo "Installing rules..."
 cp $root/examples/rules/* $install_path/rules/
 
-echo "Installing xorg conf..."
-localectl --no-convert set-x11-keymap 'pc+inet(evdev)+de_byxorna(byxorna)' complete
+# RIP X11, i dont need you anymore
+#echo "Installing xorg conf..."
+#localectl --no-convert set-x11-keymap 'pc+inet(evdev)+de_byxorna(byxorna)' complete
